@@ -1,0 +1,13 @@
+{
+  "name": "ts-node-paths-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node main.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^1.7.2",
+    "typescript": "^2.1.4"
+  }
+}
