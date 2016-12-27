@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": "https://github.com/jonaskello/ts-node-paths-example",
   "scripts": {
     "start": "ts-node main.ts",
     "start:js": "node js_out/main.js"
