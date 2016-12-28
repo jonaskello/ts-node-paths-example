@@ -6,5 +6,7 @@ Small example of using tsconfig paths with ts-node.
 
 ```
 yarn install
-yarn start
+yarn start       // run with ts-node
+yarn start:js    // run with node
+yarn start:mocha // run with mocha + ts-node
 ```
