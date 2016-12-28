@@ -6,7 +6,7 @@
   "repository": "https://github.com/jonaskello/ts-node-paths-example",
   "scripts": {
     "start": "ts-node -r node-tsconfig-paths main.ts",
-    "start:js": "node js_out/main.js"
+    "start:js": "node -r node-tsconfig-paths js_out/main.js"
   },
   "devDependencies": {
     "node-tsconfig-paths": "^0.1.2",
