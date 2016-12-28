@@ -6,11 +6,17 @@
   "repository": "https://github.com/jonaskello/ts-node-paths-example",
   "scripts": {
     "start": "ts-node -r node-tsconfig-paths main.ts",
-    "start:js": "node -r node-tsconfig-paths js_out/main.js"
+    "start:js": "node -r node-tsconfig-paths js_out/main.js",
+    "start:mocha": "mocha --compilers ts:ts-node/register -r node-tsconfig-paths mocha-example.ts",
+    "tsc": "tsc"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.35",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "node-tsconfig-paths": "^0.1.2",
-    "ts-node": "^1.7.2",
+    "ts-node": "^1.7.3",
     "typescript": "^2.1.4"
   }
 }
