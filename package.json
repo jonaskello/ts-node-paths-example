@@ -6,9 +6,10 @@
   "repository": "https://github.com/jonaskello/ts-node-paths-example",
   "scripts": {
     "start": "ts-node -r node-tsconfig-paths/register main.ts",
-    "start:js": "cd js_out && node -r node-tsconfig-paths/register main.js",
+    "start:js": "yarn run build && cd js_out && cp ../tsconfig.json . && node -r node-tsconfig-paths/register main.js",
     "start:mocha": "mocha --compilers ts:ts-node/register -r node-tsconfig-paths mocha-example.ts",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "build": "rm -rf js_out && tsc"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
