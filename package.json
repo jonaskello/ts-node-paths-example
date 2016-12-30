@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": "https://github.com/jonaskello/ts-node-paths-example",
   "scripts": {
-    "start": "ts-node -r node-tsconfig-paths/register main.ts",
-    "start:js": "yarn run build && cd js_out && cp ../tsconfig.json . && node -r node-tsconfig-paths/register main.js",
-    "start:mocha": "mocha --compilers ts:ts-node/register -r node-tsconfig-paths mocha-example.ts",
+    "start": "ts-node -r tsconfig-paths/register main.ts",
+    "start:js": "yarn run build && cd js_out && cp ../tsconfig.json . && node -r tsconfig-paths/register main.js",
+    "start:mocha": "mocha --compilers ts:ts-node/register -r tsconfig-paths/register mocha-example.ts",
     "tsc": "tsc",
     "build": "rm -rf js_out && tsc"
   },
@@ -16,8 +16,8 @@
     "@types/mocha": "^2.2.35",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
-    "node-tsconfig-paths": "^0.2.1",
     "ts-node": "^2.0.0",
+    "tsconfig-paths": "^0.4.0",
     "typescript": "^2.1.4"
   }
 }

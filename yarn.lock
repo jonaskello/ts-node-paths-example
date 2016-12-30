@@ -250,12 +250,6 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
-node-tsconfig-paths@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/node-tsconfig-paths/-/node-tsconfig-paths-0.2.1.tgz#accee188549f60dd7fe54b248bce5109c41d4e9b"
-  dependencies:
-    tsconfig "^5.0.3"
-
 once@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -328,6 +322,12 @@ ts-node@^2.0.0:
     v8flags "^2.0.11"
     xtend "^4.0.0"
     yn "^1.2.0"
+
+tsconfig-paths@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-0.4.0.tgz#beda40e0cdd09d4ac91bb294a42f32c6feb697ab"
+  dependencies:
+    tsconfig "^5.0.3"
 
 tsconfig@^5.0.2, tsconfig@^5.0.3:
   version "5.0.3"
